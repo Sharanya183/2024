@@ -1,0 +1,12 @@
+def f(n, nb={}):
+    if n in nb:
+        return nb[n]
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    ans = f(n-1, nb) + f(n-2, nb)
+    nb[n] = ans
+    return ans
+n = int(input("enter n"))
+print(f(n, nb={}))
