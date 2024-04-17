@@ -1,0 +1,8 @@
+nums = [1, 2, 3, 4, 5]
+def sqr(nums):
+    while len(nums)>0:
+        ans = []
+        x = nums.pop(-1)
+        ans.append(x*x)
+        return ans
+print(sqr(nums))
