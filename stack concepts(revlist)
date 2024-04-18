@@ -3,7 +3,7 @@ def rev(nums):
     while len(nums)>0:
         x = nums.pop()
         ans.append(x)
-        return ans 
+    return ans 
 nums = [1, 2, 3, 4, 5]
 revnums = rev(nums)
 print(revnums)
